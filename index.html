@@ -1,59 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multiplication Table</title>
 
     <!-- Standard favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
 
     <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
 
     <!-- Android Chrome Icons -->
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon/android-chrome-512x512.png"
+    />
 
     <!-- Web App Manifest -->
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
-    <section id="main">
-        <h1>Enter the numbers to generate Multiplication Table</h1>
+  <body>
+    <h2>Enter the number to generate the Multiplication Table</h2>
+    <form id="multiplication-form">
+      <div class="form-controls">
+        <label for="number">Multiply:</label>
+        <input type="number" name="number" id="number" placeholder="2" />
+      </div>
 
+      <div class="form-controls">
+        <label for="Up-to-number">Up to the number:</label>
+        <input
+          type="number"
+          name="multiplicator"
+          id="multiplicator"
+          placeholder="10"
+        />
+      </div>
+      <input type="submit" value="Submit">
+    </form>
 
-        <form action="" id="multiplication-form">
-
-            <div class="form-controls">
-                <label for="operand-one">Multiply from:</label>
-                <input type="number" name="number" id="number">
+    <div class="multiplication-table">
+        <h2>Multiplication Table <span></span></h2>
+        <div>
+            <p>The Multiplication Table will be displaed here....</p>
+            <div class="row">
+                <div class="operation">5 x 1 =</div>
+                <div class="result">5</div>
             </div>
-
-            <div class="form-controls">
-            <label for="upto-number">Up to number:</label>
-            <input type="number" name="multiplicator" id="multiplicator">
-            <button>Compute</button>
-            </div>
-
-        </form>       
-
-        <div class="result">
-            <h1>Multiplication Table</h1>
-            <div id="result">
-                <textarea name="result" id="" placeholder="The result will be displayed here..."></textarea>
+            <div class="row">
+                <div class="operation">5 x 2 =</div>
+                <div class="result">10</div>
             </div>
         </div>
-
-    </section>
-
-</body>
-
+    </div>
+    
+  </body>
 </html>

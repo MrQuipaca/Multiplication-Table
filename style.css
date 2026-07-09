@@ -7,17 +7,64 @@
 
 body {
     background-image: url("./images/background.png");
-    text-align: center;
     padding: 2rem;
     min-height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 
 
-#main {
-    background-color: rgba(245, 245, 220, 0.123);
-    width: 50%;
-    /* height: 50%; */
-    display: absolute;
+/* #main {
+    
+    width: 55%;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.form-controls {
+    margin-bottom: 0.6rem;
+    font-size: 0.8;
+    font-weight: bold;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.form-controls
+
+.form-controls input {
+    margin-bottom: 1rem;
+    /* flex: 1; */
+    padding: 0.6 0.4rem;
+    border: 1px solid #333;
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     
 }
+
+#multiplication-form input[type="submit"] {
+    max-height: 50px;
+    padding: 0.4rem 1.2rem;
+    width: 200px;
+    background-color: rgba(75, 75, 75, 0.562);
+    color:beige;
+    border-radius: 5px;
+}
+
+.result-table{
+    background-color: rgba(245, 245, 220, 0.123);
+} */
