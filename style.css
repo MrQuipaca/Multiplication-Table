@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;    
+    color: rgb(231, 231, 231);
+}
+
+body{
+    background-image: url("./images/background.png");
+}
+
+
+
+#main{
+/* justify-content: center; */
+/* align-items: center;
+text-align: center; */
+}
